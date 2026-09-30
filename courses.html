@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Courses | CODEJAWMS</title>
+    <meta name="description" content="CODEJAWMS: Learn. Build. Create.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="nav">
+        <div class="container in">
+
+            <a class="logo a a1" href="index.html">
+                CODE<b>JAWMS</b>
+            </a>
+
+            <nav class="nav-links a a2" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="courses.html" class="on">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a class="btn-c a a2" href="courses.html">
+                Start Learning &rarr;
+            </a>
+
+            <button
+                class="burger"
+                id="burger"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="menu"
+            >
+                &#9776;
+            </button>
+
+        </div>
+    </header>
+
+    <!-- ==================== MOBILE MENU ==================== -->
+    <div
+        class="menu"
+        id="menu"
+        role="dialog"
+        aria-label="Menu"
+    >
+        <div class="top">
+
+            <a class="logo" href="index.html">
+                CODE<b>JAWMS</b>
+            </a>
+
+            <button
+                class="burger"
+                id="close"
+                style="display: block"
+                aria-label="Close menu"
+            >
+                &#10005;
+            </button>
+
+        </div>
+
+        <a class="row" href="index.html">Home</a>
+        <a class="row" href="courses.html">Courses</a>
+        <a class="row" href="about.html">About</a>
+        <a class="row" href="contact.html">Contact</a>
+
+        <a class="btn-c mt-4 text-center" href="courses.html">
+            Start Learning
+        </a>
+    </div>
+
+    <main>
+
+        <!-- ==================== PAGE HERO ==================== -->
+        <section class="page-hero">
+            <div class="container">
+
+                <span class="eyebrow">
+                    COURSE LIBRARY
+                </span>
+
+                <h1 class="d1 a a1">
+                    Find your next skill.
+                </h1>
+
+                <p class="lead mt-4">
+                    Explore courses designed to help you learn practical
+                    skills and build real projects.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ==================== COURSE LIBRARY ==================== -->
+        <section class="sec">
+            <div class="container">
+
+                <!-- Course Filters -->
+                <div
+                    class="filters d-flex flex-wrap gap-2 mb-5"
+                    role="group"
+                    aria-label="Filter courses"
+                >
+                    <button
+                        class="btn active"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="btn"
+                        data-filter="Development"
+                        aria-pressed="false"
+                    >
+                        Development
+                    </button>
+
+                    <button
+                        class="btn"
+                        data-filter="Design"
+                        aria-pressed="false"
+                    >
+                        Design
+                    </button>
+
+                    <button
+                        class="btn"
+                        data-filter="Data"
+                        aria-pressed="false"
+                    >
+                        Data
+                    </button>
+
+                    <button
+                        class="btn"
+                        data-filter="Security"
+                        aria-pressed="false"
+                    >
+                        Security
+                    </button>
+                </div>
+
+                <!-- Course Cards -->
+                <div class="row g-4">
+
+                    <!-- ==================== COURSE 01 ==================== -->
+                    <div
+                        class="col-md-6 col-lg-4 course-card"
+                        data-cat="Development"
+                    >
+                        <article class="cc">
+
+                            <figure class="ph">
+                                <img
+                                    src="images/web.jpg"
+                                    alt="Developer coding"
+                                    onerror="this.remove()"
+                                >
+                                <span>images/web.jpg</span>
+                            </figure>
+
+                            <div class="body">
+
+                                <div class="d-flex justify-content-between">
+                                    <span class="num">01</span>
+                                    <span class="cat">Development</span>
+                                </div>
+
+                                <h3>
+                                    Web Development
+                                </h3>
+
+                                <div
+                                    class="meta"
+                                    style="margin: 0 0 .8rem; padding: 0; color: var(--tx2)"
+                                >
+                                    HTML, CSS, JavaScript
+                                </div>
+
+                                <p>
+                                    Build responsive websites from the ground up.
+                                </p>
+
+                                <div class="meta">
+                                    <span>Alex Morgan</span>
+                                    <span>8 hours</span>
+                                    <span>Beginner</span>
+                                </div>
+
+                                <a
+                                    class="go"
+                                    href="course-detail.html"
+                                >
+                                    View Course &rarr;
+                                </a>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- ==================== COURSE 02 ==================== -->
+                    <div
+                        class="col-md-6 col-lg-4 course-card"
+                        data-cat="Development"
+                    >
+                        <article class="cc">
+
+                            <figure class="ph">
+                                <img
+                                    src="images/workspace.jpg"
+                                    alt="Programming workspace"
+                                    onerror="this.remove()"
+                                >
+                                <span>images/workspace.jpg</span>
+                            </figure>
+
+                            <div class="body">
+
+                                <div class="d-flex justify-content-between">
+                                    <span class="num">02</span>
+                                    <span class="cat">Development</span>
+                                </div>
+
+                                <h3>
+                                    React Development
+                                </h3>
+
+                                <div
+                                    class="meta"
+                                    style="margin: 0 0 .8rem; padding: 0; color: var(--tx2)"
+                                >
+                                    React / JavaScript
+                                </div>
+
+                                <p>
+                                    Learn modern component-based web development.
+                                </p>
+
+                                <div class="meta">
+                                    <span>Jildeany Maindoka</span>
+                                    <span>12 hours</span>
+                                    <span>Intermediate</span>
+                                </div>
+
+                                <a
+                                    class="go"
+                                    href="course-detail.html"
+                                >
+                                    View Course &rarr;
+                                </a>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- ==================== COURSE 03 ==================== -->
+                    <div
+                        class="col-md-6 col-lg-4 course-card"
+                        data-cat="Design"
+                    >
+                        <article class="cc">
+
+                            <figure class="ph">
+                                <img
+                                    src="images/design.jpg"
+                                    alt="UI/UX designer at work"
+                                    onerror="this.remove()"
+                                >
+                                <span>images/design.jpg</span>
+                            </figure>
+
+                            <div class="body">
+
+                                <div class="d-flex justify-content-between">
+                                    <span class="num">03</span>
+                                    <span class="cat">Design</span>
+                                </div>
+
+                                <h3>
+                                    UI/UX Design
+                                </h3>
+
+                                <div
+                                    class="meta"
+                                    style="margin: 0 0 .8rem; padding: 0; color: var(--tx2)"
+                                >
+                                    Figma / Design
+                                </div>
+
+                                <p>
+                                    Design interfaces that are simple, useful,
+                                    and engaging.
+                                </p>
+
+                                <div class="meta">
+                                    <span>Joel Mantiri</span>
+                                    <span>10 hours</span>
+                                    <span>Beginner</span>
+                                </div>
+
+                                <a
+                                    class="go"
+                                    href="course-detail.html"
+                                >
+                                    View Course &rarr;
+                                </a>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- ==================== COURSE 04 ==================== -->
+                    <div
+                        class="col-md-6 col-lg-4 course-card"
+                        data-cat="Development"
+                    >
+                        <article class="cc">
+
+                            <figure class="ph">
+                                <img
+                                    src="images/learning.jpg"
+                                    alt="Online learning"
+                                    onerror="this.remove()"
+                                >
+                                <span>images/learning.jpg</span>
+                            </figure>
+
+                            <div class="body">
+
+                                <div class="d-flex justify-content-between">
+                                    <span class="num">04</span>
+                                    <span class="cat">Development</span>
+                                </div>
+
+                                <h3>
+                                    Python Programming
+                                </h3>
+
+                                <div
+                                    class="meta"
+                                    style="margin: 0 0 .8rem; padding: 0; color: var(--tx2)"
+                                >
+                                    Python
+                                </div>
+
+                                <p>
+                                    Learn programming fundamentals and build
+                                    practical applications.
+                                </p>
+
+                                <div class="meta">
+                                    <span>Andrew Kandoli</span>
+                                    <span>14 hours</span>
+                                    <span>Beginner</span>
+                                </div>
+
+                                <a
+                                    class="go"
+                                    href="course-detail.html"
+                                >
+                                    View Course &rarr;
+                                </a>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- ==================== COURSE 05 ==================== -->
+                    <div
+                        class="col-md-6 col-lg-4 course-card"
+                        data-cat="Data"
+                    >
+                        <article class="cc">
+
+                            <figure class="ph">
+                                <img
+                                    src="images/data.jpg"
+                                    alt="Data analysis"
+                                    onerror="this.remove()"
+                                >
+                                <span>images/data.jpg</span>
+                            </figure>
+
+                            <div class="body">
+
+                                <div class="d-flex justify-content-between">
+                                    <span class="num">05</span>
+                                    <span class="cat">Data</span>
+                                </div>
+
+                                <h3>
+                                    Data Science
+                                </h3>
+
+                                <div
+                                    class="meta"
+                                    style="margin: 0 0 .8rem; padding: 0; color: var(--tx2)"
+                                >
+                                    Python / Data
+                                </div>
+
+                                <p>
+                                    Explore data analysis, visualization,
+                                    and basic machine learning.
+                                </p>
+
+                                <div class="meta">
+                                    <span>Andrew Kandoli</span>
+                                    <span>16 hours</span>
+                                    <span>Intermediate</span>
+                                </div>
+
+                                <a
+                                    class="go"
+                                    href="course-detail.html"
+                                >
+                                    View Course &rarr;
+                                </a>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- ==================== COURSE 06 ==================== -->
+                    <div
+                        class="col-md-6 col-lg-4 course-card"
+                        data-cat="Security"
+                    >
+                        <article class="cc">
+
+                            <figure class="ph">
+                                <img
+                                    src="images/security.jpg"
+                                    alt="Cybersecurity"
+                                    onerror="this.remove()"
+                                >
+                                <span>images/security.jpg</span>
+                            </figure>
+
+                            <div class="body">
+
+                                <div class="d-flex justify-content-between">
+                                    <span class="num">06</span>
+                                    <span class="cat">Security</span>
+                                </div>
+
+                                <h3>
+                                    Cybersecurity
+                                </h3>
+
+                                <div
+                                    class="meta"
+                                    style="margin: 0 0 .8rem; padding: 0; color: var(--tx2)"
+                                >
+                                    Security / Networks
+                                </div>
+
+                                <p>
+                                    Understand fundamental concepts of digital
+                                    security and protection.
+                                </p>
+
+                                <div class="meta">
+                                    <span>Alex Morgan</span>
+                                    <span>12 hours</span>
+                                    <span>Intermediate</span>
+                                </div>
+
+                                <a
+                                    class="go"
+                                    href="course-detail.html"
+                                >
+                                    View Course &rarr;
+                                </a>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== CTA ==================== -->
+        <section class="cta">
+            <div class="container">
+
+                <h2
+                    class="d1"
+                    style="max-width: 900px"
+                >
+                    Your next skill starts here.
+                </h2>
+
+                <div class="rule"></div>
+
+                <p
+                    class="lead"
+                    style="max-width: 520px"
+                >
+                    Choose a course, start learning, and build something
+                    meaningful.
+                </p>
+
+                <a class="btn-c mt-3" href="courses.html">
+                    Explore All Courses &rarr;
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-between gap-4 align-items-center">
+
+            <div>
+                <a class="logo" href="index.html">
+                    CODE<b>JAWMS</b>
+                </a>
+
+                <div class="meta mt-1">
+                    Learn. Build. Create.
+                </div>
+            </div>
+
+            <nav aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="meta">
+                &copy; 2026 UNKLAB. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+```

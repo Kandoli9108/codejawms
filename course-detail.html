@@ -1,0 +1,762 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Modern Web Development | CODEJAWMS</title>
+    <meta name="description" content="CODEJAWMS: Learn. Build. Create.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="nav">
+        <div class="container in">
+
+            <a class="logo a a1" href="index.html">
+                CODE<b>JAWMS</b>
+            </a>
+
+            <nav class="nav-links a a2" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a class="btn-c a a2" href="courses.html">
+                Start Learning &rarr;
+            </a>
+
+            <button
+                class="burger"
+                id="burger"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="menu"
+            >
+                &#9776;
+            </button>
+
+        </div>
+    </header>
+
+    <!-- ==================== MOBILE MENU ==================== -->
+    <div
+        class="menu"
+        id="menu"
+        role="dialog"
+        aria-label="Menu"
+    >
+        <div class="top">
+
+            <a class="logo" href="index.html">
+                CODE<b>JAWMS</b>
+            </a>
+
+            <button
+                class="burger"
+                id="close"
+                style="display: block"
+                aria-label="Close menu"
+            >
+                &#10005;
+            </button>
+
+        </div>
+
+        <a class="row" href="index.html">Home</a>
+        <a class="row" href="courses.html">Courses</a>
+        <a class="row" href="about.html">About</a>
+        <a class="row" href="contact.html">Contact</a>
+
+        <a class="btn-c mt-4 text-center" href="courses.html">
+            Start Learning
+        </a>
+    </div>
+
+    <main>
+
+        <!-- ==================== COURSE HERO ==================== -->
+        <section class="page-hero">
+            <div class="container">
+
+                <div class="row g-5 align-items-end">
+
+                    <!-- Course Information -->
+                    <div class="col-lg-7">
+
+                        <span class="eyebrow">
+                            DEVELOPMENT / BEGINNER
+                        </span>
+
+                        <h1 class="d1 a a1">
+                            Modern Web Development
+                        </h1>
+
+                        <p class="lead mt-4">
+                            Learn how modern websites are structured,
+                            styled, and developed from the ground up.
+                        </p>
+
+                        <a class="btn-c mt-3" href="contact.html">
+                            Enroll Now &rarr;
+                        </a>
+
+                    </div>
+
+                    <!-- Course Image -->
+                    <div class="col-lg-5">
+
+                        <figure class="ph tall">
+                            <img
+                                src="images/web.jpg"
+                                alt="Developer coding a website"
+                                onerror="this.remove()"
+                            >
+                            <span>images/web.jpg</span>
+                        </figure>
+
+                    </div>
+
+                </div>
+
+                <!-- Course Information -->
+                <dl class="info-row">
+
+                    <div>
+                        <dt>Instructor</dt>
+                        <dd>Alex Morgan</dd>
+                    </div>
+
+                    <div>
+                        <dt>Duration</dt>
+                        <dd>8 Hours</dd>
+                    </div>
+
+                    <div>
+                        <dt>Lessons</dt>
+                        <dd>12 Lessons</dd>
+                    </div>
+
+                    <div>
+                        <dt>Level</dt>
+                        <dd>Beginner</dd>
+                    </div>
+
+                    <div>
+                        <dt>Students</dt>
+                        <dd>320+ Students</dd>
+                    </div>
+
+                </dl>
+
+            </div>
+        </section>
+
+        <!-- ==================== WHAT YOU'LL LEARN ==================== -->
+        <section class="sec">
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <div class="col-lg-5">
+                        <h2 class="d2">
+                            What you'll learn
+                        </h2>
+                    </div>
+
+                    <div class="col-lg-7">
+
+                        <ul class="check">
+                            <li>Build semantic HTML pages</li>
+                            <li>Create responsive layouts with CSS</li>
+                            <li>Understand modern JavaScript</li>
+                            <li>Work with APIs</li>
+                            <li>Build reusable components</li>
+                            <li>Deploy a complete website</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== COURSE CURRICULUM ==================== -->
+        <section class="sec">
+            <div class="container">
+
+                <h2 class="d2 mb-5">
+                    Course curriculum
+                </h2>
+
+                <div class="accordion" id="curr">
+
+                    <!-- Lesson 01 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l0"
+                                aria-expanded="false"
+                                aria-controls="l0"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    01
+                                </span>
+                                Introduction to Web Development
+                                <span class="meta">
+                                    20 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l0"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 02 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l1"
+                                aria-expanded="false"
+                                aria-controls="l1"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    02
+                                </span>
+                                HTML Fundamentals
+                                <span class="meta">
+                                    35 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l1"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 03 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l2"
+                                aria-expanded="false"
+                                aria-controls="l2"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    03
+                                </span>
+                                CSS Fundamentals
+                                <span class="meta">
+                                    20 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l2"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 04 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l3"
+                                aria-expanded="false"
+                                aria-controls="l3"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    04
+                                </span>
+                                Responsive Design
+                                <span class="meta">
+                                    35 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l3"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 05 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l4"
+                                aria-expanded="false"
+                                aria-controls="l4"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    05
+                                </span>
+                                JavaScript Basics
+                                <span class="meta">
+                                    20 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l4"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 06 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l5"
+                                aria-expanded="false"
+                                aria-controls="l5"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    06
+                                </span>
+                                DOM Manipulation
+                                <span class="meta">
+                                    35 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l5"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 07 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l6"
+                                aria-expanded="false"
+                                aria-controls="l6"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    07
+                                </span>
+                                Working with APIs
+                                <span class="meta">
+                                    20 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l6"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 08 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l7"
+                                aria-expanded="false"
+                                aria-controls="l7"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    08
+                                </span>
+                                Introduction to Components
+                                <span class="meta">
+                                    35 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l7"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 09 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l8"
+                                aria-expanded="false"
+                                aria-controls="l8"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    09
+                                </span>
+                                Building the Interface
+                                <span class="meta">
+                                    20 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l8"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 10 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l9"
+                                aria-expanded="false"
+                                aria-controls="l9"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    10
+                                </span>
+                                Project Development
+                                <span class="meta">
+                                    35 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l9"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 11 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l10"
+                                aria-expanded="false"
+                                aria-controls="l10"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    11
+                                </span>
+                                Testing and Optimization
+                                <span class="meta">
+                                    20 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l10"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Lesson 12 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#l11"
+                                aria-expanded="false"
+                                aria-controls="l11"
+                            >
+                                <span class="mono me-3" style="color: var(--ac)">
+                                    12
+                                </span>
+                                Final Project
+                                <span class="meta">
+                                    35 min
+                                </span>
+                            </button>
+                        </h3>
+
+                        <div
+                            id="l11"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#curr"
+                        >
+                            <div class="accordion-body">
+                                Video lesson with a hands-on exercise.
+                                Complete it before moving to the next lesson.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== INSTRUCTOR ==================== -->
+        <section class="sec">
+            <div class="container">
+
+                <div class="row g-5 align-items-center">
+
+                    <!-- Instructor Image -->
+                    <div class="col-md-5">
+
+                        <figure class="ph tall">
+                            <img
+                                src="images/instructor-jil.jpg"
+                                alt="Portrait of Jildeany Maindoka"
+                                onerror="this.remove()"
+                            >
+                            <span>images/instructor-jil.jpg</span>
+                        </figure>
+
+                    </div>
+
+                    <!-- Instructor Information -->
+                    <div class="col-md-7">
+
+                        <span class="eyebrow">
+                            INSTRUCTOR
+                        </span>
+
+                        <h2 class="d2">
+                            Meet your instructor
+                        </h2>
+
+                        <h3 class="fs-3 mt-4">
+                            Jildeany Maindoka
+                        </h3>
+
+                        <div
+                            class="mono"
+                            style="color: var(--ac)"
+                        >
+                            Senior Front-End Developer
+                        </div>
+
+                        <p class="mt-3 fs-5">
+                            Jil has spent years building digital products
+                            and helping new developers turn technical
+                            concepts into practical skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== CTA ==================== -->
+        <section class="cta">
+            <div class="container">
+
+                <h2
+                    class="d1"
+                    style="max-width: 900px"
+                >
+                    Your next skill starts here.
+                </h2>
+
+                <div class="rule"></div>
+
+                <p
+                    class="lead"
+                    style="max-width: 520px"
+                >
+                    Choose a course, start learning, and build something
+                    meaningful.
+                </p>
+
+                <a class="btn-c mt-3" href="courses.html">
+                    Explore All Courses &rarr;
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-between gap-4 align-items-center">
+
+            <div>
+                <a class="logo" href="index.html">
+                    CODE<b>JAWMS</b>
+                </a>
+
+                <div class="meta mt-1">
+                    Learn. Build. Create.
+                </div>
+            </div>
+
+            <nav aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="meta">
+                &copy; 2026 UNKLAB. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+```

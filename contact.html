@@ -1,0 +1,517 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact | CODEJAWMS</title>
+
+    <meta
+        name="description"
+        content="CODEJAWMS: Learn. Build. Create."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="nav">
+        <div class="container in">
+
+            <a class="logo a a1" href="index.html">
+                CODE<b>JAWMS</b>
+            </a>
+
+            <nav class="nav-links a a2" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="on">Contact</a>
+            </nav>
+
+            <a class="btn-c a a2" href="courses.html">
+                Start Learning &rarr;
+            </a>
+
+            <button
+                class="burger"
+                id="burger"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="menu"
+            >
+                &#9776;
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+        class="menu"
+        id="menu"
+        role="dialog"
+        aria-label="Menu"
+    >
+        <div class="top">
+
+            <a class="logo" href="index.html">
+                CODE<b>JAWMS</b>
+            </a>
+
+            <button
+                class="burger"
+                id="close"
+                style="display: block"
+                aria-label="Close menu"
+            >
+                &#10005;
+            </button>
+
+        </div>
+
+        <a class="row" href="index.html">Home</a>
+        <a class="row" href="courses.html">Courses</a>
+        <a class="row" href="about.html">About</a>
+        <a class="row" href="contact.html">Contact</a>
+
+        <a
+            class="btn-c mt-4 text-center"
+            href="courses.html"
+        >
+            Start Learning
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+
+                <span class="eyebrow">
+                    CONTACT CODEJAWMS
+                </span>
+
+                <h1 class="d1 a a1">
+                    Let's start learning.
+                </h1>
+
+                <p class="lead mt-4">
+                    Have a question about a course or your learning path?
+                    Send us a message.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="sec">
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-7">
+
+                        <form id="contactForm" novalidate>
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label for="n">Full Name</label>
+
+                                    <input
+                                        id="n"
+                                        class="form-control"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="e">
+                                        Email Address
+                                    </label>
+
+                                    <input
+                                        id="e"
+                                        type="email"
+                                        class="form-control"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="c">Course</label>
+
+                                    <select
+                                        id="c"
+                                        class="form-select"
+                                        required
+                                    >
+                                        <option value="">
+                                            Select a course
+                                        </option>
+
+                                        <option>
+                                            Web Development
+                                        </option>
+
+                                        <option>
+                                            React Development
+                                        </option>
+
+                                        <option>
+                                            UI/UX Design
+                                        </option>
+
+                                        <option>
+                                            Python Programming
+                                        </option>
+
+                                        <option>
+                                            Data Science
+                                        </option>
+
+                                        <option>
+                                            Cybersecurity
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="s">Subject</label>
+
+                                    <input
+                                        id="s"
+                                        class="form-control"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="m">Message</label>
+
+                                    <textarea
+                                        id="m"
+                                        rows="6"
+                                        class="form-control"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div class="col-12">
+
+                                    <button
+                                        class="btn-c"
+                                        type="submit"
+                                    >
+                                        Send Message &rarr;
+                                    </button>
+
+                                    <p
+                                        id="sent"
+                                        class="mt-3 mb-0"
+                                        style="color: #fff"
+                                        hidden
+                                        role="status"
+                                    >
+                                        Message sent. We will reply within
+                                        one working day.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="col-lg-4 offset-lg-1">
+
+                        <dl class="info">
+
+                            <dt>Email</dt>
+                            <dd>codejawms@codelab.com</dd>
+
+                            <dt>Phone</dt>
+                            <dd>+62 812 3456 7890</dd>
+
+                            <dt>Location</dt>
+                            <dd>Manado, Indonesia</dd>
+
+                            <dt>Office Hours</dt>
+                            <dd>
+                                Monday&ndash;Friday<br>
+                                08:00&ndash;17:00
+                            </dd>
+
+                        </dl>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="sec">
+            <div class="container">
+
+                <h2 class="d2 mb-5">
+                    Frequently asked questions
+                </h2>
+
+                <div class="accordion" id="faq">
+
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#f0"
+                                aria-expanded="false"
+                                aria-controls="f0"
+                            >
+                                Do I need previous programming experience?
+                            </button>
+                        </h3>
+
+                        <div
+                            id="f0"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faq"
+                        >
+                            <div class="accordion-body">
+                                No. Beginner courses start from the basics
+                                and build up step by step.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#f1"
+                                aria-expanded="false"
+                                aria-controls="f1"
+                            >
+                                How long do I have access to a course?
+                            </button>
+                        </h3>
+
+                        <div
+                            id="f1"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faq"
+                        >
+                            <div class="accordion-body">
+                                Once you enroll, you can revisit the lessons
+                                whenever you need.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#f2"
+                                aria-expanded="false"
+                                aria-controls="f2"
+                            >
+                                Are the courses beginner friendly?
+                            </button>
+                        </h3>
+
+                        <div
+                            id="f2"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faq"
+                        >
+                            <div class="accordion-body">
+                                Yes. Every course shows its level, so you can
+                                start with Beginner courses.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#f3"
+                                aria-expanded="false"
+                                aria-controls="f3"
+                            >
+                                Do I receive a certificate?
+                            </button>
+                        </h3>
+
+                        <div
+                            id="f3"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faq"
+                        >
+                            <div class="accordion-body">
+                                Yes. You receive a certificate after
+                                completing all lessons and the final project.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#f4"
+                                aria-expanded="false"
+                                aria-controls="f4"
+                            >
+                                Can I learn from my phone?
+                            </button>
+                        </h3>
+
+                        <div
+                            id="f4"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faq"
+                        >
+                            <div class="accordion-body">
+                                Yes. The platform works on phones, tablets,
+                                and computers.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#f5"
+                                aria-expanded="false"
+                                aria-controls="f5"
+                            >
+                                How do I enroll?
+                            </button>
+                        </h3>
+
+                        <div
+                            id="f5"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faq"
+                        >
+                            <div class="accordion-body">
+                                Open a course, select Enroll Now, and follow
+                                the steps.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div
+            class="container d-flex flex-wrap justify-content-between gap-4 align-items-center"
+        >
+
+            <div>
+                <a class="logo" href="index.html">
+                    CODE<b>JAWMS</b>
+                </a>
+
+                <div class="meta mt-1">
+                    Learn. Build. Create.
+                </div>
+            </div>
+
+            <nav aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="meta">
+                &copy; 2026 UNKLAB. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+```
