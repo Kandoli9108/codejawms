@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | CODEJAWMS</title>
+    <meta name="description" content="CODEJAWMS: Learn. Build. Create.">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="nav">
+        <div class="container in">
+            <a class="logo a a1" href="index.html">CODE<b>JAWMS</b></a>
+            <nav class="nav-links a a2" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="gallery.html" class="on">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="btn-c a a2" href="courses.html">Start Learning &rarr;</a>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- ==================== MOBILE MENU ==================== -->
+    <div class="menu" id="menu" role="dialog" aria-label="Menu">
+        <div class="top">
+            <a class="logo" href="index.html">CODE<b>JAWMS</b></a>
+            <button class="burger" id="close" style="display: block" aria-label="Close menu">&#10005;</button>
+        </div>
+        <a class="row" href="index.html">Home</a>
+        <a class="row" href="courses.html">Courses</a>
+        <a class="row" href="gallery.html">Gallery</a>
+        <a class="row" href="about.html">About</a>
+        <a class="row" href="contact.html">Contact</a>
+        <a class="btn-c mt-4 text-center" href="courses.html">Start Learning</a>
+    </div>
+
+    <main>
+        <!-- ==================== PAGE HERO ==================== -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">OUR GALLERY</span>
+                <h1 class="d1 a a1">Student Projects & Work.</h1>
+                <p class="lead mt-4">
+                    Explore the practical projects built by our community and students during their courses.
+                </p>
+            </div>
+        </section>
+
+        <!-- ==================== GALLERY GRID ==================== -->
+        <!-- ==================== GALLERY GRID ==================== -->
+        <section class="sec">
+            <div class="container">
+                <div class="row g-4">
+                    
+                    <!-- Gallery Item 1 -->
+                    <!-- Ubah class col-lg-4 menjadi col-lg-6 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="gallery-item">
+                            <figure class="ph">
+                                <img src="images/galleryuiux.avif" alt="Project 1" onerror="this.remove()">
+                                <span>Mobile App Design</span>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="gallery-item">
+                            <figure class="ph">
+                                <img src="images/galleryweb.jpg" alt="Project 2" onerror="this.remove()">
+                                <span>Web Development</span>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="gallery-item">
+                            <figure class="ph">
+                                <img src="images/galleryrctdash.jpg" alt="Project 3" onerror="this.remove()">
+                                <span>React Dashboard</span>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="gallery-item">
+                            <figure class="ph">
+                                <img src="images/galleryData-Visualization.png" alt="Project 4" onerror="this.remove()">
+                                <span>Data Visualization</span>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="gallery-item">
+                            <figure class="ph">
+                                <img src="images/gallerysecurity.jpg" alt="Project 5" onerror="this.remove()">
+                                <span>Network Security</span>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="gallery-item">
+                            <figure class="ph">
+                                <img src="images/galleryui.png" alt="Project 6" onerror="this.remove()">
+                                <span>Web UI</span>
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-between gap-4 align-items-center">
+            <div>
+                <a class="logo" href="index.html">CODE<b>JAWMS</b></a>
+                <div class="meta mt-1">Learn. Build. Create.</div>
+            </div>
+            <nav aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="meta">&copy; 2026 UNKLAB. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

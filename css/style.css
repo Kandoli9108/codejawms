@@ -815,3 +815,42 @@ footer a:hover {
     transform: none;
   }
 }
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-item {
+  display: block;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--bd);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  border-color: var(--ac);
+  transform: translateY(-4px);
+}
+
+.gallery-item .ph {
+  height: 320px;
+  min-height: 320px;
+  border: none;
+  margin: 0;
+  filter: grayscale(1) contrast(1.1) brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.gallery-item:hover .ph {
+  filter: grayscale(0) contrast(1.1) brightness(1);
+}
+
+.gallery-item .ph img {
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .ph img {
+  transform: scale(1.05);
+}
